@@ -27,7 +27,6 @@ class CityDB {
         let city11 = City(name: "Владивосток", id: "11")
         let city12 = City(name: "Гвардейск", id: "12")
         
-        
         cityList = [city1,city5, city6, city7, city8, city9,city2,city3, city10,city11,city12,city4]
     }
     

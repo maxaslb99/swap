@@ -105,13 +105,34 @@ class MainViewController: UIViewController, UICollectionViewDataSource, UICollec
         if collectionView.tag == 0 {
             didSelectService(indexPath)
         } else {
-            didSelectTag(indexPath)
+            didSelectTag(collectionView, indexPath)
         }
     }
     
-    func didSelectTag(_ indexPath: IndexPath) {
-        tagService.selectedTag = tagDB.getTagList()[indexPath.row]
-        tagCollectionView.reloadData()
+    func didSelectTag(_ collectionView: UICollectionView, _ indexPath: IndexPath) {
+        if let cell = collectionView.cellForItem(at: indexPath) as? TagCell {
+            cell.set(isSelected: true)
+            deselectOldTag(collectionView)
+            tagService.selectedTag = tagDB.getTagList()[indexPath.row]
+        }
+    }
+    
+    func deselectOldTag(_ collectionView: UICollectionView) {
+        guard let oldSelectedTag = tagService.selectedTag else { return }
+        
+        let tagList = TagsDB.shared.getTagList()
+        
+        var index = 0
+        while index < tagList.count && tagList[index].id != oldSelectedTag.id {
+            index += 1
+        }
+        
+        // до этого момента ни один тэг не был выбран
+        guard index < tagList.count else { return }
+        
+        if let cell = collectionView.cellForItem(at: IndexPath(row: index, section: 0)) as? TagCell {
+            cell.set(isSelected: false)
+        }
     }
     
     func didSelectService(_ indexPath: IndexPath) {
@@ -125,15 +146,5 @@ class MainViewController: UIViewController, UICollectionViewDataSource, UICollec
         }
     }
   
-    
-}
-
-extension MainViewController: UICollectionViewDelegateFlowLayout {
-    
-//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-//        
-//        return UICollectionViewFlowLayout.automaticSize
-//        
-//    }
     
 }

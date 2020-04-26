@@ -10,5 +10,6 @@ target 'swap' do
   pod 'Firebase/Firestore'
   pod 'FirebaseFirestoreSwift'
   pod 'Firebase/Auth'
+  pod 'NVActivityIndicatorView'
   
 end

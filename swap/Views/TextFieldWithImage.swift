@@ -38,7 +38,6 @@ class TextFieldWithImage: UITextField {
         let widthConstraint = imageView.widthAnchor.constraint(equalToConstant: imageHeight*2.5)
         NSLayoutConstraint.activate([widthConstraint, heightConstraint])
         leftView = imageView
-        
         leftViewMode = .always
     }
     

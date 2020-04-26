@@ -10,19 +10,22 @@ import Foundation
 import UIKit
 import FirebaseAuth
 
- //1) Logout обычно находится в профиле
- //2) Профиль имеет Имя? Фамилию и прочие параметры
-
 enum ModuleType {
     case main
     case auth
-
+    case prepareApp
+    case citySelection
+    
     var storyboardName: String {
         switch self {
         case .auth:
             return "Auth"
         case .main:
             return "Main"
+        case .prepareApp:
+            return "PrepareApp"
+        case .citySelection:
+            return "FirstChooseOfCity"
         }
     }
 }
@@ -49,7 +52,7 @@ class MainRouter {
 
     func openInitialModule() {
         if isLoggedIn {
-            open(module: .main, options: [])
+            open(module: .prepareApp, options: [])
         } else {
             open(module: .auth, options: [])
         }
@@ -60,8 +63,10 @@ class MainRouter {
         let vc = storyboard.instantiateInitialViewController()
 
         guard let window = window else { return }
+        
+        window.rootViewController = vc
         UIView.transition(with: window, duration: 0.3, options: options, animations: {
-            window.rootViewController = vc
+            
         }, completion: nil)
 
     }

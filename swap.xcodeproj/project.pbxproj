@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		500697772455B2B00031F158 /* Pods_swap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F88A006034AFB508ED8C721 /* Pods_swap.framework */; };
+		500697782455B2B00031F158 /* Pods_swap.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7F88A006034AFB508ED8C721 /* Pods_swap.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		501A2B332427C10A00ACC729 /* TextFieldWithImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501A2B322427C10A00ACC729 /* TextFieldWithImage.swift */; };
-		501A2B352427E22F00ACC729 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501A2B342427E22F00ACC729 /* TextField.swift */; };
 		501A2B372427E93700ACC729 /* CreateServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501A2B362427E93700ACC729 /* CreateServiceViewController.swift */; };
 		501A2B392428E04B00ACC729 /* DescriptionServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501A2B382428E04B00ACC729 /* DescriptionServiceViewController.swift */; };
 		501A2B3C2428E70000ACC729 /* ServiceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501A2B3B2428E70000ACC729 /* ServiceCell.swift */; };
@@ -32,6 +33,7 @@
 		506CF7C724262E0D009D00C8 /* Circe-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 506CF7C624262E0D009D00C8 /* Circe-Bold.ttf */; };
 		506D8670243F355D00FB82A0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506D866F243F355D00FB82A0 /* LoginViewController.swift */; };
 		506D8672243F358300FB82A0 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506D8671243F358300FB82A0 /* RegistrationViewController.swift */; };
+		506E5DFA24559DA600742A2B /* ShadowViev2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506E5DF924559DA600742A2B /* ShadowViev2.swift */; };
 		506F31FE24279169002F9C1F /* TagsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506F31FD24279169002F9C1F /* TagsTableViewCell.swift */; };
 		5072C8722426A5210075AA8B /* RequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5072C8712426A5210075AA8B /* RequestViewController.swift */; };
 		5072C8762426B5F20075AA8B /* ProfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5072C8752426B5F20075AA8B /* ProfilViewController.swift */; };
@@ -49,14 +51,38 @@
 		50A5171723A6314900EE2D9F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A5171623A6314900EE2D9F /* MainViewController.swift */; };
 		50B4C3092436364600CE5FDF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 50B4C3082436364600CE5FDF /* GoogleService-Info.plist */; };
 		50B4C30B24363E6E00CE5FDF /* TagCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B4C30A24363E6E00CE5FDF /* TagCell.swift */; };
+		50CB55362448739E006C2E2F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CB55352448739E006C2E2F /* User.swift */; };
+		50CB553824487470006C2E2F /* FirebaseDBKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CB553724487470006C2E2F /* FirebaseDBKeys.swift */; };
+		50CB553A24487582006C2E2F /* Encodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CB553924487582006C2E2F /* Encodable.swift */; };
+		50CB553D24487666006C2E2F /* SystemError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CB553C24487666006C2E2F /* SystemError.swift */; };
+		50CB553F24487905006C2E2F /* ValidationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CB553E24487905006C2E2F /* ValidationError.swift */; };
+		50CB5541244879BA006C2E2F /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CB5540244879BA006C2E2F /* UserService.swift */; };
+		50CB5543244881B6006C2E2F /* DefaultTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CB5542244881B6006C2E2F /* DefaultTextField.swift */; };
+		50CB554524488560006C2E2F /* ActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CB554424488560006C2E2F /* ActivityIndicatorView.swift */; };
+		50CB554724488703006C2E2F /* DefaultButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CB554624488703006C2E2F /* DefaultButton.swift */; };
+		50E3BF262451D93800E35A5F /* PrepareApp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50E3BF252451D93800E35A5F /* PrepareApp.storyboard */; };
+		50E3BF282451D97700E35A5F /* PrepareAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E3BF272451D97700E35A5F /* PrepareAppViewController.swift */; };
+		50E3BF2A2451E24800E35A5F /* FirstChooseOfCity.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50E3BF292451E24800E35A5F /* FirstChooseOfCity.storyboard */; };
 		50EA88F4242A93F400217757 /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50EA88F3242A93F400217757 /* ContactsViewController.swift */; };
 		50EA88F6242A949500217757 /* AnotherProfilVievController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50EA88F5242A949400217757 /* AnotherProfilVievController.swift */; };
-		A2540E0396924C553A18AE1A /* Pods_swap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F88A006034AFB508ED8C721 /* Pods_swap.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		500697792455B2B00031F158 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				500697782455B2B00031F158 /* Pods_swap.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		501A2B322427C10A00ACC729 /* TextFieldWithImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldWithImage.swift; sourceTree = "<group>"; };
-		501A2B342427E22F00ACC729 /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
 		501A2B362427E93700ACC729 /* CreateServiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateServiceViewController.swift; sourceTree = "<group>"; };
 		501A2B382428E04B00ACC729 /* DescriptionServiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DescriptionServiceViewController.swift; path = ../DescriptionServiceViewController.swift; sourceTree = "<group>"; };
 		501A2B3B2428E70000ACC729 /* ServiceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceCell.swift; sourceTree = "<group>"; };
@@ -80,6 +106,7 @@
 		506CF7C624262E0D009D00C8 /* Circe-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Circe-Bold.ttf"; sourceTree = "<group>"; };
 		506D866F243F355D00FB82A0 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		506D8671243F358300FB82A0 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		506E5DF924559DA600742A2B /* ShadowViev2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowViev2.swift; sourceTree = "<group>"; };
 		506F31FD24279169002F9C1F /* TagsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagsTableViewCell.swift; sourceTree = "<group>"; };
 		5072C8712426A5210075AA8B /* RequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestViewController.swift; sourceTree = "<group>"; };
 		5072C8752426B5F20075AA8B /* ProfilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilViewController.swift; sourceTree = "<group>"; };
@@ -99,6 +126,18 @@
 		50A5171623A6314900EE2D9F /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		50B4C3082436364600CE5FDF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		50B4C30A24363E6E00CE5FDF /* TagCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagCell.swift; sourceTree = "<group>"; };
+		50CB55352448739E006C2E2F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		50CB553724487470006C2E2F /* FirebaseDBKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseDBKeys.swift; sourceTree = "<group>"; };
+		50CB553924487582006C2E2F /* Encodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Encodable.swift; sourceTree = "<group>"; };
+		50CB553C24487666006C2E2F /* SystemError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemError.swift; sourceTree = "<group>"; };
+		50CB553E24487905006C2E2F /* ValidationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationError.swift; sourceTree = "<group>"; };
+		50CB5540244879BA006C2E2F /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		50CB5542244881B6006C2E2F /* DefaultTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultTextField.swift; sourceTree = "<group>"; };
+		50CB554424488560006C2E2F /* ActivityIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorView.swift; sourceTree = "<group>"; };
+		50CB554624488703006C2E2F /* DefaultButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultButton.swift; sourceTree = "<group>"; };
+		50E3BF252451D93800E35A5F /* PrepareApp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PrepareApp.storyboard; sourceTree = "<group>"; };
+		50E3BF272451D97700E35A5F /* PrepareAppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrepareAppViewController.swift; sourceTree = "<group>"; };
+		50E3BF292451E24800E35A5F /* FirstChooseOfCity.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FirstChooseOfCity.storyboard; sourceTree = "<group>"; };
 		50EA88F3242A93F400217757 /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
 		50EA88F5242A949400217757 /* AnotherProfilVievController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnotherProfilVievController.swift; sourceTree = "<group>"; };
 		7F88A006034AFB508ED8C721 /* Pods_swap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -111,7 +150,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A2540E0396924C553A18AE1A /* Pods_swap.framework in Frameworks */,
+				500697772455B2B00031F158 /* Pods_swap.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,6 +181,7 @@
 			children = (
 				502B5768242631B000630092 /* CityService.swift */,
 				5072C87B242787550075AA8B /* TagsService.swift */,
+				50CB5540244879BA006C2E2F /* UserService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -150,6 +190,7 @@
 			isa = PBXGroup;
 			children = (
 				503761F5243F3D53000E04BD /* UIViewController+showAlert.swift */,
+				50CB553924487582006C2E2F /* Encodable.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -159,6 +200,8 @@
 			children = (
 				50A516DC23895BE300EE2D9F /* Main.storyboard */,
 				503761FA243F4104000E04BD /* Auth.storyboard */,
+				50E3BF252451D93800E35A5F /* PrepareApp.storyboard */,
+				50E3BF292451E24800E35A5F /* FirstChooseOfCity.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -180,6 +223,7 @@
 				50EA88F5242A949400217757 /* AnotherProfilVievController.swift */,
 				50EA88F3242A93F400217757 /* ContactsViewController.swift */,
 				506D8671243F358300FB82A0 /* RegistrationViewController.swift */,
+				50E3BF272451D97700E35A5F /* PrepareAppViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -197,9 +241,11 @@
 		506CF7BB242622E8009D00C8 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
+				50CB553B24487658006C2E2F /* Error */,
 				5072C879242786B70075AA8B /* Tags.swift */,
 				506CF7B9242622E1009D00C8 /* City.swift */,
 				501A2B3D2428E7D000ACC729 /* Service.swift */,
+				50CB55352448739E006C2E2F /* User.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -210,6 +256,7 @@
 				506CF7BE242623AB009D00C8 /* CityDB.swift */,
 				5072C87D2427881A0075AA8B /* TagsDB.swift */,
 				501A2B3F2428E8DF00ACC729 /* ServiceDB.swift */,
+				50CB553724487470006C2E2F /* FirebaseDBKeys.swift */,
 			);
 			path = DataBase;
 			sourceTree = "<group>";
@@ -284,12 +331,24 @@
 			children = (
 				50A51712239CF43900EE2D9F /* RoundedButton.swift */,
 				50A5171423A62D5400EE2D9F /* ShadowView.swift */,
+				506E5DF924559DA600742A2B /* ShadowViev2.swift */,
 				5024362623AF6764000F3078 /* DefaultTextView.swift */,
 				5024362823AF6C06000F3078 /* NoteButton.swift */,
 				501A2B322427C10A00ACC729 /* TextFieldWithImage.swift */,
-				501A2B342427E22F00ACC729 /* TextField.swift */,
+				50CB5542244881B6006C2E2F /* DefaultTextField.swift */,
+				50CB554424488560006C2E2F /* ActivityIndicatorView.swift */,
+				50CB554624488703006C2E2F /* DefaultButton.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		50CB553B24487658006C2E2F /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				50CB553C24487666006C2E2F /* SystemError.swift */,
+				50CB553E24487905006C2E2F /* ValidationError.swift */,
+			);
+			path = Error;
 			sourceTree = "<group>";
 		};
 		C7D6CA77DD363B4155C4F618 /* Pods */ = {
@@ -321,6 +380,7 @@
 				50A516D023895BE300EE2D9F /* Frameworks */,
 				50A516D123895BE300EE2D9F /* Resources */,
 				47B7775FEEE82CB8A157160D /* [CP] Embed Pods Frameworks */,
+				500697792455B2B00031F158 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -373,8 +433,10 @@
 				50A516E323895BE400EE2D9F /* LaunchScreen.storyboard in Resources */,
 				50A516E023895BE400EE2D9F /* Assets.xcassets in Resources */,
 				506CF7C524262DFB009D00C8 /* Circe-Regular.ttf in Resources */,
+				50E3BF262451D93800E35A5F /* PrepareApp.storyboard in Resources */,
 				50A516DE23895BE300EE2D9F /* Main.storyboard in Resources */,
 				50B4C3092436364600CE5FDF /* GoogleService-Info.plist in Resources */,
+				50E3BF2A2451E24800E35A5F /* FirstChooseOfCity.storyboard in Resources */,
 				503761FB243F4104000E04BD /* Auth.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -429,15 +491,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				5072C87C242787550075AA8B /* TagsService.swift in Sources */,
+				50CB553824487470006C2E2F /* FirebaseDBKeys.swift in Sources */,
 				50A5171523A62D5400EE2D9F /* ShadowView.swift in Sources */,
 				501A2B372427E93700ACC729 /* CreateServiceViewController.swift in Sources */,
 				501A2B402428E8DF00ACC729 /* ServiceDB.swift in Sources */,
 				506D8672243F358300FB82A0 /* RegistrationViewController.swift in Sources */,
 				506CF7B8242621AD009D00C8 /* FirstChooseOfCityViewController.swift in Sources */,
 				50EA88F6242A949500217757 /* AnotherProfilVievController.swift in Sources */,
+				50CB5543244881B6006C2E2F /* DefaultTextField.swift in Sources */,
 				5072C8722426A5210075AA8B /* RequestViewController.swift in Sources */,
 				503761F6243F3D53000E04BD /* UIViewController+showAlert.swift in Sources */,
 				501A2B392428E04B00ACC729 /* DescriptionServiceViewController.swift in Sources */,
+				50E3BF282451D97700E35A5F /* PrepareAppViewController.swift in Sources */,
 				5072C87E2427881A0075AA8B /* TagsDB.swift in Sources */,
 				502B576B2426353000630092 /* SecondCitySelectionViewController.swift in Sources */,
 				5072C87A242786B70075AA8B /* Tags.swift in Sources */,
@@ -445,26 +510,33 @@
 				50A516D723895BE300EE2D9F /* AppDelegate.swift in Sources */,
 				50A51713239CF43900EE2D9F /* RoundedButton.swift in Sources */,
 				5024362523AF6475000F3078 /* NotificnationsViewController.swift in Sources */,
+				50CB5541244879BA006C2E2F /* UserService.swift in Sources */,
 				501A2B3E2428E7D000ACC729 /* Service.swift in Sources */,
+				50CB55362448739E006C2E2F /* User.swift in Sources */,
 				50A516D923895BE300EE2D9F /* SceneDelegate.swift in Sources */,
 				501A2B332427C10A00ACC729 /* TextFieldWithImage.swift in Sources */,
 				502B5769242631B000630092 /* CityService.swift in Sources */,
+				50CB553F24487905006C2E2F /* ValidationError.swift in Sources */,
 				506F31FE24279169002F9C1F /* TagsTableViewCell.swift in Sources */,
 				5024362723AF6764000F3078 /* DefaultTextView.swift in Sources */,
 				506CF7BA242622E1009D00C8 /* City.swift in Sources */,
+				50CB553D24487666006C2E2F /* SystemError.swift in Sources */,
 				501A2B3C2428E70000ACC729 /* ServiceCell.swift in Sources */,
 				506CF7C1242626A3009D00C8 /* FirstChooseCityCell.swift in Sources */,
 				5072C8762426B5F20075AA8B /* ProfilViewController.swift in Sources */,
-				501A2B352427E22F00ACC729 /* TextField.swift in Sources */,
 				503761F8243F4076000E04BD /* MainRouter.swift in Sources */,
+				506E5DFA24559DA600742A2B /* ShadowViev2.swift in Sources */,
 				502B576D2426378100630092 /* SecondSeleclionCityCell.swift in Sources */,
 				50A5171723A6314900EE2D9F /* MainViewController.swift in Sources */,
 				5024362923AF6C06000F3078 /* NoteButton.swift in Sources */,
 				5072C8782426C6260075AA8B /* TagsViewController.swift in Sources */,
 				506D8670243F355D00FB82A0 /* LoginViewController.swift in Sources */,
+				50CB554524488560006C2E2F /* ActivityIndicatorView.swift in Sources */,
+				50CB554724488703006C2E2F /* DefaultButton.swift in Sources */,
 				506CF7BF242623AB009D00C8 /* CityDB.swift in Sources */,
 				5024362323AF5E38000F3078 /* NoteViewController.swift in Sources */,
 				50EA88F4242A93F400217757 /* ContactsViewController.swift in Sources */,
+				50CB553A24487582006C2E2F /* Encodable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

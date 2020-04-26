@@ -8,6 +8,8 @@
 
 import Foundation
 import UIKit
+import FirebaseAuth
+import FirebaseFirestore
 
 class FirstChooseOfCityViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var tableView: UITableView!
@@ -39,8 +41,40 @@ class FirstChooseOfCityViewController: UIViewController, UITableViewDelegate, UI
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let cityList = cityDB.getCityList()
-        CityService.shared.selectedCity = cityList[indexPath.row]
-        performSegue(withIdentifier: "didChooseCity", sender: nil)
+        let city = cityList[indexPath.row]
+        saveInDB(city)
     }
     
+    func saveInDB(_ city: City) {
+        
+        guard let user = Auth.auth().currentUser else {
+            MainRouter.shared.open(module: .auth)
+            return
+        }
+        
+        
+        let db = Firestore.firestore()
+        
+        do {
+            let dict: [String: Any] = try city.toDictionary()
+            db.collection(FirebaseDBKeys.users).document(user.uid).updateData(dict) { [weak self] (error) in
+                if let error = error {
+                    self?.show(error: error)
+                } else {
+                    self?.updateUser(city: city)
+                    CityService.shared.selectedCity = city
+                    MainRouter.shared.open(module: .main, options: [.transitionCrossDissolve])
+                }
+            }
+        } catch {
+            show(error: error)
+        }
+    }
+    
+    func updateUser(city: City) {
+        if var user = UserService.shared.getUser() {
+            user.city = city
+            UserService.shared.save(user: user)
+        }
+    }
 }

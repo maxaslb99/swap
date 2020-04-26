@@ -18,7 +18,7 @@ class CreateServiceViewController: UIViewController {
         let backItem = UIBarButtonItem()
         backItem.title = ""
         navigationItem.backBarButtonItem = backItem
-    
-        }
+        
+    }
 }
 
